@@ -1,11 +1,90 @@
-html {
-    font-size: 16px;
-}
+@charset "UTF-8";
+
+
 
 body {
     font-size: 1.05rem;
     line-height: 1.8;
 }
+
+
+
+
+/*-------------------------------------------
+
+共通部分
+
+-------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 100%;
+
+}
+
+body {
+
+    font-family: "IM Fell Great Primer", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+
+ /* .container {
+
+    max-width: 1200px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    height: auto;
+
+    padding: 80px 30px;
+
+} */
+
+
+
+/* .section-title {
+
+    padding: 20px;
+
+    font-size: 3rem;
+
+    color: #383e45;
+
+    display: inline-block;
+
+    width: auto;
+
+    height: auto;
+
+
+
+} */ 
 
 /* ---------------------------
    header
@@ -25,7 +104,7 @@ body {
 }
 
 .header__inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px 16px;
     display: flex;
@@ -129,10 +208,12 @@ body {
    fv
 --------------------------- */
 .fv {
+    
+    height: 40vh;
     padding: 80px 16px;
     background-image: url(img/fv.jpg);
     background-size: cover;
-    /* background-position: center; */
+    
     position: relative;
     background-position: right 40%;
 }
@@ -147,7 +228,7 @@ body {
 
 .fv__inner {
     position: relative;
-    max-width: 1100px;
+    max-width: 1200px;
     margin-right: auto;
     padding: 0 20px;
     margin-left: auto;
@@ -222,7 +303,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -304,6 +385,11 @@ body {
     font-size: 1rem;
     border-radius: 9999px;
     text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.cta__button:hover {
+    opacity: 0.8;
 }
 
 .cta__button--primary {
@@ -321,7 +407,7 @@ body {
 --------------------------- */
 .footer {
     background: #f7f7f7;
-    padding: 60px 0 20px;
+    padding: 60px 0 60px;
 }
 
 .footer__inner {
@@ -354,6 +440,8 @@ body {
 .footer__copy {
     font-size: 0.85rem;
     color: #666;
+    margin-top: 30px;
+
 }
 
 
